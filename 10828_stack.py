@@ -1,3 +1,5 @@
+#stack = rear push rear pop
+
 from sys import stdin
 input = stdin.readline
 
