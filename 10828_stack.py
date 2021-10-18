@@ -1,25 +1,17 @@
 from sys import stdin
 input = stdin.readline
 
-N = int(input())
-stack = list()
+stack = []
 
-for _ in range(N):
-    order= list(input().split())
-
-    if order[0] == "push":
-        stack.append(order[1])
-    elif order[0] == "pop":
-        if len(stack)== 0 :
-            print(-1)
-        else :
-            print(stack.pop(-1))
-    elif order[0] == "size":
+for _ in range(int(input())):
+    arr = list(input().split())
+    if arr[0] == 'push' :
+        stack.append(arr[1])
+    elif arr[0] == 'pop':
+        print(-1 if len(stack)== 0 else stack.pop())
+    elif arr[0] == 'size':
         print(len(stack))
-    elif order[0] == "empty":
-        print(1 if len(stack)== 0 else 0)
-    elif order[0] == "top":
-        if len(stack) == 0 :
-            print(-1)
-        else :
-            print(stack[-1])
+    elif arr[0] == 'empty':
+        print(1 if len(stack)==0 else 0)
+    elif arr[0] == 'top':
+        print(-1 if len(stack)==0 else stack[-1])
