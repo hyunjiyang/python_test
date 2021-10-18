@@ -15,3 +15,16 @@ for _ in range(int(input())):
     print("YES" if left == 0 else "NO")
 
 # try 2 : 스택
+for _ in range(int(input())):
+    arr = list(input())
+    stack = []
+    for i in arr:
+        if i == "(" :
+            stack.append(i)
+        elif i == ")":
+            if len(stack) > 0:
+                stack.pop()
+            else:
+                stack.append(i)
+                break
+    print("YES" if len(stack) == 0 else "NO")
