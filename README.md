@@ -3,6 +3,8 @@ for coding test
 
 1037_divisor.py
 
+10828_stack.py
+
 [2178_maze.py](https://www.acmicpc.net/problem/2178)
 
 [1260_dfs_bfs](https://www.acmicpc.net/problem/1260) 
