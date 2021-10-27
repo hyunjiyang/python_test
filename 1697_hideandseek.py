@@ -22,3 +22,18 @@ def bfs(n):
     return deq[0][1]
 
 print(bfs(n))
+
+# 재귀
+n, k = map(int,input().split())
+
+def recur(n,k):
+    if n >= k :
+        return n-k
+    elif k==1:
+        return 1
+    elif k%2 == 0:
+        return 1+min(recur(n,k-1),recur(n,k+1))
+    else :
+        return min(k-n, 1+recur(n,k//2))
+
+print(recur(n,k))
