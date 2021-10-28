@@ -54,3 +54,5 @@ for coding test
 [programmers_다리를건너는트럭.py](https://programmers.co.kr/learn/courses/30/lessons/42583)
 
 [programmers_타겟넘버.py](https://programmers.co.kr/learn/courses/30/lessons/43165)
+
+[programmers_여행경로.py](https://programmers.co.kr/learn/courses/30/lessons/43164)
