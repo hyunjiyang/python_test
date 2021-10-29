@@ -1,3 +1,4 @@
+#try 1
 from collections import defaultdict
 
 def solution(tickets):
@@ -19,5 +20,29 @@ def solution(tickets):
             else:
                 visited.append(stack.pop())
         return visited[::-1]
+    
+    return dfs("ICN")
+
+#try2 : visited를 안쓰고 싶다!!! -> testcase 실패...
+from collections import defaultdict
+
+def solution(tickets):
+    routes = defaultdict(list)
+    for key, value in tickets:
+        routes[key].append(value)
+    for key in routes.keys():
+        routes[key].sort()
+        
+    stack = []
+
+    def dfs(key):
+        stack.append(key)
+        while stack:
+            key = stack[-1] 
+            if routes[key] != []:
+                stack.append(routes[key].pop(0))
+            else:
+                break
+        return stack[::]
     
     return dfs("ICN")
