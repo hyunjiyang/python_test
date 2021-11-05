@@ -58,3 +58,5 @@ for coding test
 [programmers_타겟넘버.py](https://programmers.co.kr/learn/courses/30/lessons/43165)
 
 [programmers_여행경로.py](https://programmers.co.kr/learn/courses/30/lessons/43164)
+
+[programmers_k번째수.py](https://programmers.co.kr/learn/courses/30/lessons/42748)
